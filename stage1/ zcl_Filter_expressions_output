@@ -1,0 +1,42 @@
+iternal table from main table connection
+CARRIER_ID  CONNECTION_ID  DISTANCE  
+UA          0058           9608      
+UA          0059           9608      
+UA          1537           1752      
+AA          0322           1752      
+AA          0017           520       
+AA          2678           520       
+AA          0015           4156      
+AA          0018           4156      
+LH          0400           6162      
+LH          0401           6162      
+LH          0402           6217      
+LH          0403           6217      
+filtered table from standard table connection
+CARRIER_ID  CONNECTION_ID  DISTANCE  
+LH          0403           6217      
+LH          0402           6217      
+LH          0401           6162      
+LH          0400           6162      
+iternal table from main standard table connection
+CARRIER_ID  CONNECTION_ID  DISTANCE  
+AA          0322           1752      
+AA          0017           520       
+AA          2678           520       
+AA          0015           4156      
+AA          0018           4156      
+LH          0400           6162      
+LH          0401           6162      
+LH          0402           6217      
+LH          0403           6217      
+UA          0058           9608      
+UA          0059           9608      
+UA          1537           1752      
+filtered table from main sorted table connection
+CARRIER_ID  CONNECTION_ID  DISTANCE  
+LH          0400           6162      
+LH          0401           6162      
+LH          0402           6217      
+LH          0403           6217      
+
+
