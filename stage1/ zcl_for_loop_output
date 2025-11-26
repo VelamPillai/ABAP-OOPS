@@ -1,0 +1,148 @@
+flight info table
+CLIENT  CARRIER_ID  CONNECTION_ID  AIRPORT_FROM_ID  AIRPORT_TO_ID  DEPARTURE_TIME  ARRIVAL_TIME  DISTANCE  DISTANCE_UNIT  
+100     SQ          0001           SFO              SIN            01:15:00        11:50:00      13523     KM             
+100     SQ          0002           SIN              SFO            06:30:00        09:15:00      13523     KM             
+100     SQ          0011           NRT              SIN            14:55:00        20:50:00      5363      KM             
+100     SQ          0012           SIN              NRT            09:53:00        17:54:00      5363      KM             
+100     UA          0058           SFO              FRA            13:45:00        09:55:00      9608      KM             
+100     UA          0059           FRA              SFO            13:55:00        16:30:00      9608      KM             
+100     UA          1537           EWR              MIA            21:56:00        00:47:00      1752      KM             
+100     AA          0322           MIA              EWR            20:17:00        23:19:00      1752      KM             
+100     AA          0017           MIA              HAV            07:19:00        08:03:00      520       KM             
+100     AA          2678           HAV              MIA            06:15:00        10:30:00      520       KM             
+100     AA          0015           JFK              SFO            07:13:00        10:04:00      4156      KM             
+100     AA          0018           SFO              JFK            06:40:00        15:06:00      4156      KM             
+100     LH          0400           FRA              JFK            10:10:00        11:34:00      6162      KM             
+100     LH          0401           JFK              FRA            18:30:00        07:45:00      6162      KM             
+100     LH          0402           FRA              EWR            13:30:00        15:35:00      6217      KM             
+100     LH          0403           EWR              FRA            18:09:00        07:30:00      6217      KM             
+100     JL          0407           NRT              FRA            13:23:00        15:56:00      9379      KM             
+100     JL          0408           FRA              NRT            20:25:00        15:40:00      9379      KM             
+100     AZ          0788           VCE              NRT            13:25:00        10:13:00      9595      KM             
+100     AZ          0789           NRT              VCE            14:26:00        21:31:00      9595      KM             
+
+
+flight info table (selected fields)
+AIRPORT_FROM_ID  AIRPORT_TO_ID  ARRIVAL_TIME  CARRIER_ID  
+SFO              SIN            SF:O0:00      SQ          
+SIN              SFO            SI:N0:00      SQ          
+NRT              SIN            NR:T0:00      SQ          
+SIN              NRT            SI:N0:00      SQ          
+SFO              FRA            SF:O0:00      UA          
+FRA              SFO            FR:A0:00      UA          
+EWR              MIA            EW:R0:00      UA          
+MIA              EWR            MI:A0:00      AA          
+MIA              HAV            MI:A0:00      AA          
+HAV              MIA            HA:V0:00      AA          
+JFK              SFO            JF:K0:00      AA          
+SFO              JFK            SF:O0:00      AA          
+FRA              JFK            FR:A0:00      LH          
+JFK              FRA            JF:K0:00      LH          
+FRA              EWR            FR:A0:00      LH          
+EWR              FRA            EW:R0:00      LH          
+NRT              FRA            NR:T0:00      JL          
+FRA              NRT            FR:A0:00      JL          
+VCE              NRT            VC:E0:00      AZ          
+NRT              VCE            NR:T0:00      AZ          
+
+
+flight info table (selected fields based on some condition)
+AIRPORT_FROM_ID  AIRPORT_TO_ID  ARRIVAL_TIME  CARRIER_ID  
+NRT              SIN            NR:T0:00      SQ          
+NRT              FRA            NR:T0:00      JL          
+NRT              VCE            NR:T0:00      AZ          
+
+
+flight info table (using corresponding)
+AIRPORT_FROM_ID  ARRIVAL_TIME  CONNECTION_ID  CARRIER_ID  
+NRT              20:50:00      0011           SQ          
+NRT              15:56:00      0407           JL          
+NRT              21:31:00      0789           AZ          
+
+
+flight info table (fields order are different
+ARRIVAL_TIME  CARRIER_ID  AIRPORT_FROM_ID  CONNECTION_ID  
+11:50:00      SQ          SFO              0001           
+09:15:00      SQ          SIN              0002           
+20:50:00      SQ          NRT              0011           
+17:54:00      SQ          SIN              0012           
+09:55:00      UA          SFO              0058           
+16:30:00      UA          FRA              0059           
+00:47:00      UA          EWR              1537           
+23:19:00      AA          MIA              0322           
+08:03:00      AA          MIA              0017           
+10:30:00      AA          HAV              2678           
+10:04:00      AA          JFK              0015           
+15:06:00      AA          SFO              0018           
+11:34:00      LH          FRA              0400           
+07:45:00      LH          JFK              0401           
+15:35:00      LH          FRA              0402           
+07:30:00      LH          EWR              0403           
+15:56:00      JL          NRT              0407           
+15:40:00      JL          FRA              0408           
+10:13:00      AZ          VCE              0788           
+21:31:00      AZ          NRT              0789           
+
+range of connection id
+SIGN  OPTION  LOW   HIGH  
+I     LT      0001  0000  
+I     LT      0002  0000  
+I     LT      0011  0000  
+I     LT      0012  0000  
+I     LT      0015  0000  
+I     LT      0017  0000  
+I     LT      0018  0000  
+I     LT      0058  0000  
+I     LT      0059  0000  
+I     LT      0322  0000  
+I     LT      0400  0000  
+I     LT      0401  0000  
+I     LT      0402  0000  
+I     LT      0403  0000  
+I     LT      0407  0000  
+I     LT      0408  0000  
+I     LT      0788  0000  
+I     LT      0789  0000  
+I     LT      1537  0000  
+I     LT      2678  0000  
+
+
+adding date field
+CONNECTION_ID  CARRIER_ID  DATE        
+0001           SQ          2025-11-26  
+0002           SQ          2025-11-26  
+0011           SQ          2025-11-26  
+0012           SQ          2025-11-26  
+0058           UA          2025-11-26  
+0059           UA          2025-11-26  
+1537           UA          2025-11-26  
+0322           AA          2025-11-26  
+0017           AA          2025-11-26  
+2678           AA          2025-11-26  
+0015           AA          2025-11-26  
+0018           AA          2025-11-26  
+0400           LH          2025-11-26  
+0401           LH          2025-11-26  
+0402           LH          2025-11-26  
+0403           LH          2025-11-26  
+0407           JL          2025-11-26  
+0408           JL          2025-11-26  
+0788           AZ          2025-11-26  
+0789           AZ          2025-11-26  
+
+
+normal for loop
+NUMBER  SQUARE  CUBE  
+0       0       0     
+1       1       1     
+2       4       8     
+3       9       27    
+4       16      64    
+5       25      125   
+6       36      216   
+7       49      343   
+8       64      512   
+9       81      729   
+
+
+
