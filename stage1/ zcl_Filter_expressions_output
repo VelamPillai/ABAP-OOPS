@@ -1,42 +1,93 @@
-iternal table from main table connection
+ source rows : 20
+flight details which distance less than 1000km
 CARRIER_ID  CONNECTION_ID  DISTANCE  
-UA          0058           9608      
-UA          0059           9608      
-UA          1537           1752      
-AA          0322           1752      
-AA          0017           520       
 AA          2678           520       
-AA          0015           4156      
-AA          0018           4156      
-LH          0400           6162      
-LH          0401           6162      
-LH          0402           6217      
-LH          0403           6217      
-filtered table from standard table connection
-CARRIER_ID  CONNECTION_ID  DISTANCE  
-LH          0403           6217      
-LH          0402           6217      
-LH          0401           6162      
-LH          0400           6162      
-iternal table from main standard table connection
-CARRIER_ID  CONNECTION_ID  DISTANCE  
-AA          0322           1752      
 AA          0017           520       
-AA          2678           520       
-AA          0015           4156      
-AA          0018           4156      
-LH          0400           6162      
-LH          0401           6162      
-LH          0402           6217      
-LH          0403           6217      
-UA          0058           9608      
-UA          0059           9608      
+AA          0322           1752      
 UA          1537           1752      
-filtered table from main sorted table connection
+flight details with lower case carrier id
 CARRIER_ID  CONNECTION_ID  DISTANCE  
-LH          0400           6162      
-LH          0401           6162      
-LH          0402           6217      
-LH          0403           6217      
+aa          2678           520       
+aa          0017           520       
+aa          0322           1752      
+ua          1537           1752      
+total flight distance
+4544  
+total flight distance
+26121513  
+airport list
+AIRPORT_ID  NAME                                   CITY                               
+FRA         Frankfurt Airport                      Frankfurt/Main                     
+HAM         Hamburg Airport                        Hamburg                            
+MUC         Munich Airport                         Munich                             
+SXF         Berlin Schönefeld Airport              Berlin                             
+THF         Berlin Tempelhof Airport               Berlin                             
+TXL         Berlin Tegel Airport                   Berlin                             
+CDG         Charles de Gaulle Airport              Paris                              
+ORY         Orly Airport                           Paris                              
+VIE         Vienna International Airport           Vienna                             
+ZRH         Zürich Airport                         Zurich                             
+RTM         Rotterdam The Hague Airport            Rotterdam                          
+FCO         Leonardo da Vinci–Fiumicino Airport    Rome                               
+VCE         Venice Marco Polo Airport              Venice                             
+LCY         London City Airport                    London                             
+LGW         Gatwick Airport                        London                             
+LHR         Heathrow Airport                       London                             
+MAD         Adolfo Suárez Madrid–Barajas Airport   Madrid                             
+VKO         Vnukovo International Airport          Moscow                             
+SVO         Sheremetyevo International Airport     Moscow                             
+JFK         John F. Kennedy International Airport  New York City, New York            
+BNA         Nashville International Airport        Nashville, Tennessee               
+BOS         Logan International Airport            Boston, Massachusetts              
+ELP         El Paso International Airport          El Paso, Texas                     
+DEN         Denver International Airport           Denver, Colorado                   
+HOU         William P. Hobby Airport               Houston, Texas                     
+LAS         McCarran International Airport         Las Vegas, Nevada                  
+LAX         Los Angeles International Airport      Los Angeles, California            
+MCI         Kansas City International Airport      Kansas City, Missouri              
+MIA         Miami International Airport            Miami, Florida                     
+SFO         San Francisco International Airport    San Francisco, California          
+EWR         Newark Liberty International Airport   Newark, New Jersey                 
+YOW         Ottawa Macdonald–Cartier Int. Airport  Ottawa, Ontario                    
+ACA         General Juan N. Álvarez Int. Airport   Acapulco, Guerrero                 
+GIG         Rio de Janeiro–Galeão Int. Airport     Rio de Janeiro                     
+HAV         José Martí International Airport       Havana                             
+ASP         Alice Springs Airport                  Alice Springs, Northern Territory  
+ACE         Lanzarote Airport                      Lanzarote, Canary Islands          
+HRE         Harare International Airport           Harare                             
+GCJ         Grand Central Airport                  Johannesburg                       
+NRT         Narita International Airport           Tokyo, Honshu                      
+ITM         Osaka International Airport            Osaka, Honshu                      
+KIX         Kansai International Airport           Osaka, Honshu                      
+HIJ         Hiroshima Airport                      Hiroshima, Honshu                  
+SIN         Singapore Changi Airport               Singapore                          
+KUL         Kuala Lumpur International Airport     Kuala Lumpur                       
+HKG         Hong Kong International Airport        Hongkong                           
+BKK         Suvarnabhumi Airport                   Bangkok                            
+airport info
+Vnukovo International Airport  
+airport info only with char A
+AIRPORT_ID  NAME                 CITY    
+LHR         Heathrow Airport     London  
+LGW         Gatwick Airport      London  
+LCY         London City Airport  London  
+airport info only with char A
+AIRPORT_ID  NAME                 CITY    
+LCY         London City Airport  London  
+airport info only with char A
+AIRPORT_ID  NAME             CITY    
+LGW         Gatwick Airport  London  
+airport info only with char A
+AIRPORT_ID  NAME              CITY    
+LHR         Heathrow Airport  London  
+airport info only with char A
+AIRPORT_ID  NAME                            CITY               
+LAS         McCarran International Airport  Las Vegas, Nevada  
+airport info only with char A
+AIRPORT_ID  NAME                               CITY                     
+LAX         Los Angeles International Airport  Los Angeles, California  
+airport info only with char A
+AIRPORT_ID  NAME               CITY                       
+ACE         Lanzarote Airport  Lanzarote, Canary Islands  
 
 

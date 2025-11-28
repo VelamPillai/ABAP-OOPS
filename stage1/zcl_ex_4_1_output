@@ -1,0 +1,9 @@
+ source rows : 20
+flight details which distance less than 1000km
+CARRIER_ID  CONNECTION_ID  DISTANCE  
+AA          2678           520       
+AA          0017           520       
+AA          0322           1752      
+UA          1537           1752      
+
+
